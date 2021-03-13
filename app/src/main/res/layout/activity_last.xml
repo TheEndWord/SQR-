@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LastActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:background="@mipmap/last_tool">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_collapseMode="parallax"
+
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:title="健康饮食">
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:lineSpacingMultiplier="2"
+            android:text="无论是动物还是人类，饮食是我们每天都要做的事。饮食关乎着身体的健康。每天的三餐是必不可少的。我们都讲究早饭要吃好，午饭要吃饱，晚饭要吃少。
+
+现在许多小学生中学生爱吃垃圾食品，而他们却不知道那些所谓的垃圾食品指的是什么，垃圾食品指的是辣条、薯片等食品。许多小学生都没意识到垃圾的危害性。甚至有的学生拿自己家人给的吃饭钱买那些垃圾食品。甚至有些年轻女性每天都不吃饭，只想让自己变瘦，她们的做法是不对的，不吃饭只会影响自己的成长。我们要合理安排自己的一日三餐，每天有规律的做户外运动。每天早上可以去散步跑步、做早操。这些都可以对身体有好处，这样会增加我们的免疫力。我们每天吃饭时，可以适量加一些蔬菜。饭前饭后可以吃一些水果。蔬菜含有大量的维生素，也可以增强免疫力。只有把饭食规划好，才能有好身体，才能不让细菌和疾病缠着我们。
+
+许多小孩子喜欢吃糖果，早早地就把牙齿吃坏了，有的不到五岁就成蛀牙了。我们应该保护好自己的牙齿，这样才能够吃有营养的食物。小孩子应该学会保护自己的牙齿，不乱吃药，不乱打针，不要总吃糖。让口腔外的细菌和病毒靠近我们。
+
+我们要合理饮食，有良好的吃饭习惯，这样才会有健康饮食！
+
+" />
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

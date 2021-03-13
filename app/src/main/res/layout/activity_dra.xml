@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    tools:context=".DraActivity"
+    android:background="@mipmap/dei">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/top_view_bar"
+            layout="@layout/top_view_bar" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="start"
+        android:id="@+id/ll"
+        android:background="#FFFF00"
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="不能让这里太空"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="就发放一张图片吧"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/chen"/>
+        <Button
+            android:id="@+id/dra_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="-60dp"
+            android:text="跳转到一个可以下拉刷新的界面"
+            android:onClick="onClick">
+
+        </Button>
+        <Button
+            android:id="@+id/dra_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="-120dp"
+            android:text="食物如何营养搭配"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.health">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Health">
+        <activity android:name=".DraActivity"></activity>
+        <activity android:name=".Last2Activity" />
+        <activity android:name=".LastActivity" />
+        <activity android:name=".guide.GuideActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".AboutActivity2" />
+        <activity android:name=".food_grid.FoodDescActivity" />
+        <activity android:name=".food_grid.FoodGridActivity" />
+        <activity android:name=".guide.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeMenuActivity" />
+        <activity android:name=".food_list.infoListActivity" />
+    </application>
+
+</manifest>
